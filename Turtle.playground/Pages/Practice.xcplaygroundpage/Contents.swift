@@ -1,16 +1,14 @@
-penUp()
-back(16)
+let a = 100.0
+let b = 60.0
+
+setColor(.green)
+right()
+forward(a)
 left()
-back(30)
+forward(b)
+left(90 + arctangent(b / a))
+forward(hypotenuse(a, b))
 
-penDown()
-forward(60)
-right(120)
-forward( 60)
-right(120)
-forward(60)
-
-penUp()
-home()
+sign()
 
 //: Go back to the [Intro page](Intro) to look up available commands.
