@@ -60,6 +60,11 @@ public class Turtle {
             scene.backgroundColor = backgroundColor
         }
     }
+    public var lineWidth: CGFloat = 1.0 {
+        didSet {
+            scene.lineWidth = lineWidth
+        }
+    }
     public var color: UIColor = Color.defaultInk.uiColor {
         didSet {
             scene.color = color
