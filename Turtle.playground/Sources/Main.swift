@@ -2,10 +2,12 @@ import UIKit
 import SpriteKit
 import PlaygroundSupport
 
+// MARK: Playground Initialization
 public let world = TurtleWorldScene(size: CGSize(width: 700, height: 700))
 public let character = TurtleSprite(image: createImage(fromText: "🐙", withFontSize: 18), intrinsicHeading: 90)
 public let t = Turtle(withCharacter:character, scene: world)
 
+// MARK: Turtle commands
 public func home() {
     t.home()
 }

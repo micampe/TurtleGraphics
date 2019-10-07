@@ -1,14 +1,5 @@
 import UIKit
 
-public extension BinaryInteger {
-    var toRadians: CGFloat { return CGFloat(self) * .pi / 180 }
-}
-
-public extension FloatingPoint {
-    var toRadians: Self { return self * .pi / 180 }
-    var toDegrees: Self { return self * 180 / .pi }
-}
-
 public func createImage(fromText text: String, withFontSize fontSize: CGFloat = 36) -> UIImage {
     let attributes = [
         NSAttributedString.Key.font: UIFont.systemFont(ofSize: fontSize)
