@@ -66,10 +66,10 @@ func letter_r(size: Double = 60) -> Double {
     let c = height / 3.0
     back(c)
     penDown()
-    let angle = arctangent(width / c)
-    right(angle)
+    let alpha = angle(fromOpposite: width, adjacent: c)
+    right(alpha)
     forward(hypotenuse(c, width))
-    right(90 + (90 - angle))
+    right(180.0 - alpha)
     penUp()
     forward(height)
     left()
@@ -129,7 +129,7 @@ func letter_e(size: Double = 60) -> Double {
     right()
     forward(width)
     right()
-    let holeSize = height * 0.75
+    let holeSize = height * 0.6
     forward(holeSize)
     right()
     forward(width)
