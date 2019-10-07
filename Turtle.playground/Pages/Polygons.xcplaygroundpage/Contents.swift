@@ -1,15 +1,15 @@
 t.scene.animatedDrawing = true
 
-func polygon(sides: Int, size: Int) {
+func polygon(sides: Int, size: Double) {
     for _ in 1...sides {
-        forward(Double(size))
+        forward(size)
         right(360.0 / Double(sides))
     }
 }
 
 func polygons(maxSides: Int) {
     for sides in 3...maxSides {
-        polygon(sides: sides, size: 50)
+        polygon(sides: sides, size: 50.0)
     }
 }
 
