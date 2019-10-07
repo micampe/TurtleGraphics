@@ -1,5 +1,4 @@
 let phi = 1.618
-let size = 60.0
 
 func capHeight(forSize size: Double) -> Double {
     return size
@@ -9,7 +8,7 @@ func xHeight(forSize size: Double) -> Double {
     return size / phi
 }
 
-func space(size: Double = 60) -> Double {
+func space(size: Double) -> Double {
     let width = (size / phi) / 4.0
     penUp()
     forward(width)
@@ -17,7 +16,7 @@ func space(size: Double = 60) -> Double {
     return width
 }
 
-func letter_T(size: Double = 60) -> Double {
+func letter_T(size: Double) -> Double {
     let height = capHeight(forSize: size)
     let width = size / phi
     penUp()
@@ -38,7 +37,7 @@ func letter_T(size: Double = 60) -> Double {
     return width
 }
 
-func letter_u(size: Double = 60) -> Double {
+func letter_u(size: Double) -> Double {
     let height = xHeight(forSize: size)
     let width = size / phi * 0.75
     right()
@@ -57,7 +56,7 @@ func letter_u(size: Double = 60) -> Double {
     return width
 }
 
-func letter_r(size: Double = 60) -> Double {
+func letter_r(size: Double) -> Double {
     let height = xHeight(forSize: size)
     let width = size / phi * 0.5
     left()
@@ -77,7 +76,7 @@ func letter_r(size: Double = 60) -> Double {
     return width
 }
 
-func letter_t(size: Double = 60) -> Double {
+func letter_t(size: Double) -> Double {
     let height = capHeight(forSize: size)
     let width = size / phi * 0.5
     penUp()
@@ -104,7 +103,7 @@ func letter_t(size: Double = 60) -> Double {
     return width
 }
 
-func letter_l(size: Double = 60) -> Double {
+func letter_l(size: Double) -> Double {
     let height = capHeight(forSize: size)
     let width = size / phi * 0.25
     left()
@@ -117,7 +116,7 @@ func letter_l(size: Double = 60) -> Double {
     return width
 }
 
-func letter_e(size: Double = 60) -> Double {
+func letter_e(size: Double) -> Double {
     let height = xHeight(forSize: size)
     let width = size / phi * 0.75
     penUp()
@@ -165,8 +164,9 @@ right()
 back(100)
 penDown()
 
-let lineSpacing = 20.0
 for _ in 1...5 {
+    let size = 60.0
+    let lineSpacing = size / 3.0
     let width = writeTurtle(wordSize: size)
     penUp()
     back(width)
