@@ -4,6 +4,7 @@ public class TurtleWorldScene : SKScene {
     var isDrawing: Bool = true
     var currentPosition: CGPoint = CGPoint.zero
     public var color: UIColor = Color.defaultInk.uiColor
+    public var lineWidth: CGFloat = 1.0
     var linesNodes: [ SKShapeNode ] = []
     public var animatedDrawing = false
     public var animationSpeed = 5
@@ -37,7 +38,7 @@ public class TurtleWorldScene : SKScene {
         let penNode = SKShapeNode()
         penNode.name = "line"
         penNode.strokeColor = color
-        penNode.lineWidth = 1
+        penNode.lineWidth = lineWidth
         penNode.path = path
         return penNode
     }

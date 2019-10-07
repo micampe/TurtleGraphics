@@ -64,6 +64,10 @@ public func setBackgroundColor(_ color: Color) {
     t.backgroundColor = color.uiColor
 }
 
+public func setLineWidth(_ lineWidth: Double) {
+    t.lineWidth = CGFloat(lineWidth)
+}
+
 public func sign() {
     penUp()
     moveTo(t.maxX - 20, t.minY + 18)
