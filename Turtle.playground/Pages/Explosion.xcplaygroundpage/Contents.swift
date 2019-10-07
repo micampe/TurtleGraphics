@@ -1,5 +1,3 @@
-import UIKit
-
 t.scene.animatedDrawing = true
 
 func polygon(sides: Int, size: Double) {
@@ -15,7 +13,7 @@ let sides = 5
 let count = 120
 
 for _ in 1...80 {
-    setColor(UIColor.black.withAlphaComponent(CGFloat.random(in: 0.2...0.7)))
+    setColor(Color.black.withAlphaComponent(Double.random(in: 0.2...0.7)))
     
     let angle = Double.random(in: 0...360)
     left(angle)

@@ -3,7 +3,7 @@ import SpriteKit
 public class TurtleWorldScene : SKScene {
     var isDrawing: Bool = true
     var currentPosition: CGPoint = CGPoint.zero
-    public var color: UIColor = TurtleColor.defaultInk
+    public var color: UIColor = Color.defaultInk.uiColor
     var linesNodes: [ SKShapeNode ] = []
     public var animatedDrawing = false
     public var animationSpeed = 5

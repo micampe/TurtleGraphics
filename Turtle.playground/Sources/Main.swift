@@ -54,12 +54,12 @@ public func moveTo(_ x: Double, _ y: Double) {
     t.moveTo(x: x, y: y)
 }
 
-public func setColor(_ color: UIColor) {
-    t.color = color
+public func setColor(_ color: Color) {
+    t.color = color.uiColor
 }
 
-public func setBackgroundColor(_ color: UIColor) {
-    t.backgroundColor = color
+public func setBackgroundColor(_ color: Color) {
+    t.backgroundColor = color.uiColor
 }
 
 public func sign() {

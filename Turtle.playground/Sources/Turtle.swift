@@ -55,12 +55,12 @@ public class Turtle {
     public let sprite: TurtleSprite
     public let scene: TurtleWorldScene
     public let view: SKView
-    public var backgroundColor: UIColor = TurtleColor.white {
+    public var backgroundColor: UIColor = Color.white.uiColor {
         didSet {
             scene.backgroundColor = backgroundColor
         }
     }
-    public var color: UIColor = TurtleColor.defaultInk {
+    public var color: UIColor = Color.defaultInk.uiColor {
         didSet {
             scene.color = color
         }

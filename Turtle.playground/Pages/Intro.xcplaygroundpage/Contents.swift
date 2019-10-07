@@ -23,7 +23,7 @@
  Pen commands:
  * `penUp()`: lift the pen up from the paper
  * `penDown()`: set the pen down on the paper
- * `setColor(color)`: change the color of the pen. Colors can be created using the function `TurtleColor.from(hex:)`, a few predefined colors are provided by the system: `TurtleColor.black`, `TurtleColor.white`, `TurtleColor.blue`, `TurtleColor.green`, `TurtleColor.red`, `TurtleColor.yellow`
+ * `setColor(color)`: change the color of the pen. A few predefined colors are provided by the system: `Color.black`, `Color.white`, `Color.blue`, `Color.green`, `Color.red`, `Color.yellow`. Custom colors can be created using the function `Color(fromHex:)`.
 
  The turtle can be show or hidden without affecting its drawing (if the turtle is hidden and the pen is down it will still draw):
  * `hide()`
